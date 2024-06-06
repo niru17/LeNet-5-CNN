@@ -14,11 +14,11 @@ This code implements a deep learning pipeline using PyTorch to train and evaluat
   
 4. Define the LeNet-5 Model
 - Model Architecture: The LeNet-5 model is defined as a class. This model is a type of convolutional neural network (CNN) that has several layers:
---Three convolutional layers that apply filters to the input images to detect features.
+   --Three convolutional layers that apply filters to the input images to detect features.
   
---Activation functions (Tanh) that introduce non-linearity.
+   --Activation functions (Tanh) that introduce non-linearity.
 
---Max-pooling layers that reduce the spatial dimensions of the feature maps.
+   --Max-pooling layers that reduce the spatial dimensions of the feature maps.
 
 Fully connected layers that combine all the features to make the final classification.
 
@@ -35,9 +35,13 @@ Fully connected layers that combine all the features to make the final classific
 - Update the model parameters using the optimizer.
 - Track Loss: Calculate and store the average loss for the epoch.
 - Evaluation Loop: After each epoch, evaluate the model on the test data:
+  
    -- Set the model to evaluation mode.
+  
    -- Loop over the test data in batches.
+  
    -- Perform a forward pass and compute the accuracy.
+  
 - Track and print the accuracy for the epoch.
   
 The function returns lists of training losses and test accuracies for each epoch.
